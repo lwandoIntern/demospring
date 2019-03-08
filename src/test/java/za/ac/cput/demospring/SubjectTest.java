@@ -1,8 +1,6 @@
-package za.ac.cput.demospring.demospring;
+package za.ac.cput.demospring;
 
 import org.junit.*;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -33,23 +31,23 @@ public class SubjectTest {
 
     @Test(expected = AssertionError.class)
     public void getSubId() {
-        Assert.assertEquals(subject.getSubId(),1005);
+        assertEquals(subject.getSubId(),1005);
     }
 
     @Test
     public void getName() {
-        Assert.assertEquals(subject.getName(),"Information Systems 3");
+        assertEquals(subject.getName(),"Information Systems 3");
     }
 
 
     @Test
     public void isCompulsory() {
-        Assert.assertEquals(subject.isCompulsory(),true);
+        assertEquals(subject.isCompulsory(),true);
     }
 
     @Test
     public void getDuration() {
-        Assert.assertEquals(subject.getDuration(),"1 year");
+        assertEquals(subject.getDuration(),"1 year");
     }
 
     /*
@@ -60,7 +58,7 @@ public class SubjectTest {
     @Test
     public void testObjectEquality(){
 
-        Assert.assertEquals(subject,subject1);
+        assertEquals(subject,subject1);
     }
     /*
      * this test tests object identity

@@ -1,4 +1,4 @@
-package za.ac.cput.demospring.demospring;
+package za.ac.cput.demospring;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,32 +18,32 @@ public class StudentTest {
 
     @Test
     public void getStudentId() {
-        Assert.assertEquals(student.getStudentId(),student.getStudentId());
+        assertEquals(student.getStudentId(),student.getStudentId());
     }
 
     @Test
     public void getName() {
-        Assert.assertEquals(student.getName(),student.getName());
+        assertEquals(student.getName(),student.getName());
     }
 
     @Test
     public void getSurname() {
-        Assert.assertEquals(student.getSurname(),student.getSurname());
+        assertEquals(student.getSurname(),student.getSurname());
     }
 
     @Test
     public void getAddress() {
-        Assert.assertEquals(student.getAddress(),student.getAddress());
+        assertEquals(student.getAddress(),student.getAddress());
     }
 
     @Test(expected = AssertionError.class)
     public void getZipCode() {
-        Assert.assertEquals(student.getZipCode(),student.getZipCode());
+        assertEquals(student.getZipCode(),student.getZipCode());
     }
     @Test(timeout = 10000)
     public void testObjectEquality(){
 
-        Assert.assertEquals(student,student1);
+        assertEquals(student,student1);
     }
     /*
      * this test tests object identity

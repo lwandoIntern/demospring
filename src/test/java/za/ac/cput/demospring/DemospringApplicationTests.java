@@ -1,4 +1,4 @@
-package za.ac.cput.demospring.demospring;
+package za.ac.cput.demospring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

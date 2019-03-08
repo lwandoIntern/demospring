@@ -1,4 +1,4 @@
-package za.ac.cput.demospring.demospring;
+package za.ac.cput.demospring;
 
 import java.util.Objects;
 
